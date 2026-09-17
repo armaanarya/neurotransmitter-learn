@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.45 system-ui, sans-serif; background: #fff; color: #222; }
+main { max-width: 680px; margin: 0 auto; padding: 16px; }
+header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+h1 { font-size: 22px; margin: 0; }
+nav button { margin-left: 4px; }
+button { font: inherit; padding: 8px 14px; border: 1px solid #bbb; border-radius: 6px; background: #f6f6f6; cursor: pointer; }
+button.on { background: #222; color: #fff; border-color: #222; }
+.bar { height: 8px; background: #eee; border-radius: 4px; margin: 20px 0 6px; overflow: hidden; }
+#fill { height: 100%; width: 0; background: #2e9e5b; transition: width .3s; }
+.muted { color: #777; font-size: 14px; margin: 0 0 16px; }
+.kind { font-size: 13px; color: #777; text-transform: uppercase; letter-spacing: .04em; }
+.prompt { font-size: 21px; margin: 6px 0 18px; }
+.opt { display: block; width: 100%; text-align: left; margin: 8px 0; padding: 12px 14px; background: #fff; }
+.opt:hover:not(:disabled) { background: #f3f3f3; }
+.opt.right { background: #dff3e6; border-color: #2e9e5b; }
+.opt.wrongpick { background: #fbe2e2; border-color: #c94444; }
+input { font: inherit; width: 100%; padding: 12px; border: 1px solid #bbb; border-radius: 6px; }
+.fb { margin: 16px 0; padding: 12px 14px; border-radius: 6px; }
+.fb.good { background: #dff3e6; }
+.fb.bad { background: #fbe2e2; }
+.row { display: flex; gap: 8px; margin-top: 12px; }
+table { border-collapse: collapse; width: 100%; margin-top: 20px; font-size: 15px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+th { background: #f3f3f3; }
+@media (max-width: 520px) { td, th { font-size: 13px; padding: 6px; } }
